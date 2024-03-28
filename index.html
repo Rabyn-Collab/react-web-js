@@ -5,9 +5,347 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      :root {
+        --base-Color: #1E293B;
+      }
+
+      header {
+        background-color: var(--base-Color);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 9px 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+      }
+
+
+
+
+
+      .dis-section {
+        background-color: var(--base-Color);
+        padding: 0 10px;
+        color: white;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        height: 210px;
+        margin-bottom: 5rem;
+      }
+
+      .dis-info {
+        justify-self: center;
+        line-height: 2rem;
+        padding-top: 25px;
+      }
+
+      .dis-img img {
+        height: 250px;
+        object-fit: cover;
+      }
+
+
+
+      form input {
+        width: 70%;
+        padding: 2px 12px;
+
+      }
+
+      form input:focus {
+        outline: 2px solid rgb(202, 15, 46);
+      }
+
+      form button {
+        border: none;
+        padding: 3px 5px;
+      }
+
+
+      main {
+        padding: 0 20px;
+      }
+
+      .courses-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+
+      .course {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 10px;
+
+      }
+
+      .course p {
+        font-size: 0.8rem;
+      }
+
+      .course .info {
+        text-align: center;
+        line-height: 2.2rem;
+      }
+
+      .testimonials {
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+      }
+
+      .user {
+        background-color: bisque;
+        padding: 10px;
+      }
+
+      .user-info {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+
+        gap: 10px;
+      }
+
+      .user-info img {
+        height: 72px;
+        width: 72px;
+        border-radius: 50%;
+        justify-self: center;
+      }
+
+      @media (max-width: 720px) {
+        .dis-section {
+          grid-template-columns: 1fr;
+          height: auto;
+          margin-bottom: 40px;
+          gap: 0;
+        }
+
+        .dis-img {
+          height: auto;
+          justify-self: center;
+        }
+      }
+
+      @media (max-width: 420px) {
+
+        .dis-img img {
+          width: 100%;
+        }
+      }
+    </style>
+
   </head>
 
   <body>
+
+    <header>
+      <div class="logo">
+        <div>
+          <i style="color: blueviolet;" class="fa-brands fa-square-pied-piper fa-2x"></i>
+        </div>
+        <h1>Course Web</h1>
+      </div>
+      <nav>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+
+
+
+    <div class="dis-section">
+
+      <div class="dis-info">
+        <h3>Learn any digital skill of your choice today</h3>
+        <p>Over 30000 students currently learn with us</p>
+        <form>
+          <input type="text" placeholder="Search for courses">
+          <button>Start Learning</button>
+
+        </form>
+        <p>Over 30000 students currently learn with us</p>
+      </div>
+
+      <div class="dis-img">
+        <img
+          src="https://images.unsplash.com/photo-1683009680116-b5c04463551d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+          alt="">
+      </div>
+
+
+    </div>
+
+
+    <!-- ================main============== -->
+
+    <main>
+
+
+      <div class="courses-section">
+
+        <div class="course">
+          <div class="info">
+            <i class="fa-brands fa-weebly fa-2xl"></i>
+            <h4>Over 300 available courses</h4>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius a architecto similique. Ipsum, deserunt
+            sed esse eius facilis eum.</p>
+        </div>
+        <div class="course">
+          <div class="info">
+            <i class="fa-brands fa-weebly fa-2xl"></i>
+            <h4>Over 300 available courses</h4>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius a architecto similique. Ipsum, deserunt
+            sed esse eius facilis eum.</p>
+        </div>
+        <div class="course">
+          <div class="info">
+            <i class="fa-brands fa-weebly fa-2xl"></i>
+            <h4>Over 300 available courses</h4>
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius a architecto similique. Ipsum, deserunt
+            sed esse eius facilis eum.</p>
+        </div>
+
+
+      </div>
+
+
+      <div class="testimonials">
+        <div class="user">
+
+          <div class="user-info">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                alt="">
+            </div>
+            <div>
+              <h3>Ryan Florence</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+
+          <div class="user-info">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                alt="">
+            </div>
+            <div>
+              <h3>Ryan Florence</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+
+          <div class="user-info">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                alt="">
+            </div>
+            <div>
+              <h3>Ryan Florence</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+
+          <div class="user-info">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                alt="">
+            </div>
+            <div>
+              <h3>Ryan Florence</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+
+          <div class="user-info">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1707343848655-a196bfe88861?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+                alt="">
+            </div>
+            <div>
+              <h3>Ryan Florence</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+
+
+
+      </div>
+
+
+
+    </main>
+
+
+
+
+
+
 
 
 
